@@ -1,0 +1,267 @@
+.MegaNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 9999;
+}
+
+.HyerLogo img {
+    width: 150px;
+}
+
+.MegaNavbarRight {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.MegaNavbarRespnv {
+    display: flex;
+    flex-direction: row;
+    gap: inherit;
+    box-sizing: border-box;
+}
+
+.MegaNavbarRespnv2 {
+    display: flex;
+    flex-direction: row;
+    gap: inherit;
+    box-sizing: border-box;
+}
+
+.MegaNavbarRight a:not(.DropDown a, .HelpDropDown a) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    padding: 20px 1px;
+}
+
+.DropDown {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 60px;
+    background-color: #4d79ac;
+    width: 300px;
+    opacity: 0;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+.DropDownContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.DropDown a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffffc5;
+    font-weight: 400;
+}
+
+.DropDown a:hover {
+    font-weight: 600;
+    color: #fff;
+}
+
+.DropDown:hover {
+    display: block;
+}
+
+.Work:hover .DropDown {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-in-out both;
+}
+
+.Work {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.BarsIcon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: inherit;
+    cursor: pointer;
+}
+
+.BarsIcon img {
+    width: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(-10px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.HelpDropDown {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #604d8d;
+    width: 270px;
+    opacity: 0;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+.HelpDropDownContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.HelpDropDown a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffffc5;
+    font-weight: 400;
+}
+
+.HelpDropDown a:hover {
+    font-weight: 600;
+    color: #fff;
+}
+
+.HelpDropDown:hover {
+    display: block;
+}
+
+.Help:hover .HelpDropDown {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-in-out both;
+}
+
+.Help {
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(-10px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .MegaNavbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        font-size: 18px;
+        position: fixed;
+        top: 0;
+    }
+    .MegaNavbarRight a:not(.DropDown a, .HelpDropDown a) {
+        padding: 2px;
+    }
+    .DropDown {
+        display: none;
+        z-index: 5;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #4d79ac;
+        width: 300px;
+        opacity: 0;
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+    }
+    .HyerLogo img {
+        width: 120px;
+    }
+    .MegaNavbarRespnv {
+        display: none;
+    }
+    .BarsIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: inherit;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .BarsIcon img {
+        width: 18px;
+    }
+    .MegaNavbarRespnv2 {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .MegaNavbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-wrap: nowrap;
+        width: 100%;
+        font-size: 14px;
+        background-color: white;
+    }
+    .HyerLogo img {
+        width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .MegaNavbarRespnv {
+        display: none;
+    }
+    .MegaNavbarRight a:not(.DropDown a, .HelpDropDown a) {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #000;
+        padding: 1px;
+    }
+    .MegaNavbarRespnv2 {
+        display: none;
+    }
+}

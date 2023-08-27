@@ -1,0 +1,42 @@
+.AboutPageBody {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.FirstTier {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px 100px;
+}
+
+.LastTier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 100px;
+}
+
+@media screen and (max-width: 1500px) {
+    .AboutPageBody {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .FirstTier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px;
+        gap: 30px;
+    }
+    .LastTier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px;
+        gap: 30px;
+    }
+}

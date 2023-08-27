@@ -1,0 +1,130 @@
+.LogInPageBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient( #4d79ac, #604d8d);
+    box-sizing: border-box;
+}
+
+.WelcomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.Welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.WelcomeContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 330px;
+    gap: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.HyerLogos {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.HyerSlideShow {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    padding: 100px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    box-sizing: border-box;
+    background-color: red;
+    max-width: 100%;
+}
+
+.WelcomeHeader {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 80%; */
+}
+
+.WelcomeHeader :first-child {
+    font-size: 24px;
+}
+
+.WelcomeHeader :nth-child(2) {
+    font-size: 17px;
+    color: #6f7084;
+}
+
+.InputsContainer {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 14px;
+}
+
+.EmailContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.PasswordContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.PasswordContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.PasswordContent a {
+    color: #000;
+}
+
+.LogInSlideshow img {
+    height: 100%;
+    width: 100%;
+}
+
+.LogInSlideshow {
+    width: 50px;
+}
+
+#HAHAHAHA {
+    width: 100px;
+    background-color: green;
+    padding: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    .WelcomeContent {
+        width: 90%;
+    }
+}

@@ -1,0 +1,6 @@
+/* Counter.css */
+
+.counter {
+    transition: 0.5s;
+    /* Add a smooth transition for the counter value */
+}

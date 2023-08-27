@@ -1,0 +1,363 @@
+.CaseStudiesBody {
+    overflow: hidden;
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.FlexLeftContainer {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexLeftContainer.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexLeftContainer.animated {
+    animation: slideInRight 1s forwards;
+}
+
+.Kelvin {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.Kelvin.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.Kelvin.animated {
+    animation: slideInLeft 1s backwards;
+}
+
+.FlexLeftContainerTwo {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexLeftContainerTwo.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexRightTwo {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexRightTwo.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexRightTwo.animated {
+    animation: slideInLeft 1s backwards;
+}
+
+.FlexLeftThree {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexLeftThree.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexLeftThree.animated {
+    animation: slideInLeft 1s backwards;
+}
+
+.FlexRightThree {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexRightThree.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexRightThree.animated {
+    animation: slideInRight 1s backwards;
+}
+
+.FlexLeftFour {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexLeftFour.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexLeftFour.animated {
+    animation: slideInRight 1s backwards;
+}
+
+.FlexRightFour {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexRightFour.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexRightFour.animated {
+    animation: slideInLeft 1s backwards;
+}
+
+.FlexLeftFive {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexLeftFive.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexLeftFive.animated {
+    animation: slideInLeft 1s backwards;
+}
+
+.FlexRightFive {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexRightFive.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexRightFive.animated {
+    animation: slideInRight 1s backwards;
+}
+
+.FlexLeftSix {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexLeftSix.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexLeftSix.animated {
+    animation: slideInRight 1s backwards;
+}
+
+.FlexRightSix {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.FlexRightSix.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.FlexRightSix.animated {
+    animation: slideInLeft 1s backwards;
+}
+
+.FlexLeftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 50%;
+}
+
+.TextContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 100px;
+}
+
+.FirstText,
+.SecondText {
+    font-size: 17px;
+    color: #898181;
+}
+
+.LinkText a {
+    font-size: 17px;
+    color: blue;
+    text-decoration: none;
+}
+
+.LinkText a:hover {
+    color: #898181;
+}
+
+.FlexRightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+}
+
+.ImgContent {
+    width: 100%;
+    height: 100%;
+}
+
+.ImgContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.BallsFood {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid rgb(149, 149, 149);
+}
+
+@media screen and (max-width: 1220px) {
+    .FlexRightContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 100%;
+    }
+    .TextContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px;
+    }
+    .FlexLeftContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 100%;
+    }
+    .FlexLeftContainer img {
+        max-width: 100%;
+    }
+    .BallsFood {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 1px solid rgb(149, 149, 149);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .FlexRightContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 100%;
+        order: 1;
+    }
+    .TextContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px;
+    }
+    .FlexLeftContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 100%;
+        order: 2;
+    }
+    .BallsFood {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid rgb(149, 149, 149);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .FlexRightContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 100%;
+        order: 1;
+    }
+    .TextContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+    }
+    .FlexLeftContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 100%;
+        order: 2;
+    }
+    .BallsFood {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid rgb(149, 149, 149);
+    }
+}

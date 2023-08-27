@@ -1,0 +1,111 @@
+.home {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.Overlay {
+    display: flex;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 8%;
+    background-color: #ffffff00;
+    right: 0;
+    overflow-x: hidden;
+    transition: width 0.5s;
+}
+
+.Overlay-content {
+    position: fixed;
+    top: 7%;
+    width: 100%;
+    background-color: #000000a5;
+    border-radius: 10px;
+    transition: all 3s;
+}
+
+.Overlay a {
+    padding: 14px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #00000093;
+    display: block;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.Overlay a:hover,
+.Overlay a:focus {
+    color: #f1f1f1;
+}
+
+.AccordionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.AccordionLinks a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HireHelp {
+    background-color: #604d8d;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.API {
+    background-color: #4d79ac;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.About {
+    background-color: #e5e5e5;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.AboutLinks {
+    background-color: #a6a6a6;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.AboutLinks a {
+    background-color: #a6a6a6;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.HireHelp img {
+    width: 25px;
+}
+
+.HireHelpLinks a {
+    background-color: #9376d6;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@media screen and (min-width: 660px) {
+    .Overlay {
+        display: none;
+    }
+}

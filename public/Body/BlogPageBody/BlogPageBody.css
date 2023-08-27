@@ -1,0 +1,54 @@
+.HyerLife {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.HyerLife img {
+    width: 400px;
+    max-width: 100%;
+}
+
+.LifeBlog {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    font-style: italic;
+}
+
+.BlogPageCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 100px;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+    .BlogPageCards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 20px;
+        gap: 40px;
+        box-sizing: border-box;
+    }
+    .BlogPageBody {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .BlogPageBody {
+        padding-top: 100px;
+    }
+}

@@ -1,0 +1,64 @@
+.PillBorderBlack {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1000px;
+    font-size: 20px;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.PillBorderBlack:hover {
+    background-color: #604d8d;
+    border: 2px solid #4d79ac;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+
+#Learn {
+    background-image: linear-gradient( #4d79ac, #4d79ac, #604d8d);
+    padding: 15px;
+    border-radius: 64px;
+    border: 2px solid white;
+    font-size: 22px;
+    min-width: 200px;
+    color: #fff;
+}
+
+#Learn:hover {
+    transition: all 0.3s;
+    background-image: linear-gradient( #604d8d, #604d8d, #604d8d);
+}
+
+#LogIn {
+    font-size: 14px;
+    background-color: #2f4050;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+#LogIn:hover {
+    transition: 0.3s ease;
+    background-color: #557491;
+}
+
+@media screen and (max-width: 700px) {
+    #Learn {
+        background-image: linear-gradient( #4d79ac, #4d79ac, #604d8d);
+        padding: 10px;
+        border-radius: 64px;
+        border: 2px solid white;
+        font-size: 18px;
+        min-width: 200px;
+    }
+    .PillBorderBlack {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 1000px;
+        font-size: 18px;
+        padding: 10px;
+        min-width: 150px;
+    }
+}

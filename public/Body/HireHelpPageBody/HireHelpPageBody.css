@@ -1,0 +1,855 @@
+.HireHelpBody {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.TalentPoolContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    background-color: #e3eaf2;
+}
+
+.TalentPool {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+
+.VideoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VideoContainer video {
+    width: 700px;
+}
+
+.Pool {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+}
+
+.PoolParagraph {
+    font-size: 22px;
+    color: #5e5e5e;
+}
+
+.PoolHeader {
+    font-size: 36px;
+    color: #000000;
+}
+
+.AchievementsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px 100px;
+}
+
+.TeamTalkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 300px;
+}
+
+.TeamTalk {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.TeamTalkParagraph {
+    font-size: 20px;
+    color: #5e5e5e;
+}
+
+.TeamTalkHeader {
+    font-size: 36px;
+    color: #5e5e5e;
+}
+
+.TeamTalkIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.TeamTalkInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.TeamTalkInputsName {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.TeamTalkInputNameContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.TryOutContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.TryOut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 200px;
+}
+
+.TryOut :first-child {
+    color: #5e5e5e;
+    font-size: 36px;
+}
+
+.TryOut :nth-child(2) {
+    color: #5e5e5e;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.BusinessProfileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 100px;
+    background-image: linear-gradient( #4d79ac, #4d79ac, #604d8d);
+}
+
+.BusinessProfile {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.BusinessProfile.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.BusinessProfile.animated {
+    animation: slideInBottom 1s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.BusinessProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.BusinessProfileParagraphContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.BusinessProfileHeader {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.BusinessProfileParagraph {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.CaseLocationContainer {
+    opacity: 0.5;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.CaseLocationContainer.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.CaseLocationContainer.animated {
+    animation: slideInBottom 1s forwards;
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.TeamTalkContainer {
+    opacity: 0.5;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.TeamTalkContainer.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.TeamTalkContainer.animated {
+    animation: slideInBottom 1s forwards;
+}
+
+.CaseLocationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.CaseContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.LocationCaseContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.CaseLocationContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.DividerGrey {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    height: 245px;
+    padding: 2px;
+}
+
+.APIImg {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+    .TalentPoolContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 150px;
+        background-color: #e3eaf2;
+    }
+    .TalentPool {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 100px;
+        align-items: center;
+    }
+    .VideoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .VideoContainer video {
+        width: 700px;
+    }
+    .Pool {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .PoolParagraph {
+        font-size: 20px;
+        color: #5e5e5e;
+        text-align: center;
+    }
+    .PoolHeader {
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .TeamTalkContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    .TeamTalk {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+    .TeamTalkParagraph {
+        font-size: 18px;
+        color: #5e5e5e;
+    }
+    .TeamTalkHeader {
+        font-size: 30px;
+        color: #5e5e5e;
+    }
+    .TeamTalkIntro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .TeamTalkInputs {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .TeamTalkInputsName {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .TeamTalkInputNameContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 30px;
+        box-sizing: border-box;
+    }
+    .CaseLocationContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 20px;
+    }
+    .CaseContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 380px;
+        max-width: 400px;
+    }
+    .LocationCaseContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 380px;
+        max-width: 400px;
+    }
+    .CaseLocationContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 380px;
+        max-width: 400px;
+    }
+    .DividerGrey {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #5e5e5e;
+        height: 245px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .TryOutContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px;
+        background-color: #f5f5f5;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    .TryOut :first-child {
+        color: #5e5e5e;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .TryOut :nth-child(2) {
+        color: #5e5e5e;
+        font-size: 22px;
+        line-height: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .TryOut {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-right: 0;
+    }
+    .BusinessProfileContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+        background-image: linear-gradient( #4d79ac, #4d79ac, #604d8d);
+    }
+    .BusinessProfile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .BusinessProfileParagraphContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .BusinessProfileHeader {
+        color: #ffffff;
+        text-align: center;
+        font-size: 36px;
+    }
+    .BusinessProfileParagraph {
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .CaseLocationContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 20px;
+    }
+    .CaseContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .LocationCaseContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .CaseLocationContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .FeaturesContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding-top: 70px;
+    }
+    .CaseLocationContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        gap: 30px;
+    }
+    .LocationCaseContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .CaseContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .CaseLocationContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Divider {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #5e5e5e;
+        width: 100%;
+        height: 1px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .TalentPoolContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        background-color: #e3eaf2;
+    }
+    .TalentPool {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: center;
+    }
+    .VideoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .VideoContainer video {
+        width: 100%;
+    }
+    .Pool {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .PoolParagraph {
+        font-size: 20px;
+        color: #5e5e5e;
+        text-align: center;
+    }
+    .PoolHeader {
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+    }
+    .TeamTalkContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .TeamTalk {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+    .TeamTalkParagraph {
+        font-size: 18px;
+        color: #5e5e5e;
+    }
+    .TeamTalkHeader {
+        font-size: 30px;
+        color: #5e5e5e;
+    }
+    .TeamTalkIntro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .TeamTalkInputs {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .TeamTalkInputsName {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .TeamTalkInputNameContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+        box-sizing: border-box;
+    }
+    .TryOutContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background-color: #f5f5f5;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .TalentPoolContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-color: #e3eaf2;
+    }
+    .TalentPool {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: center;
+    }
+    .VideoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .VideoContainer video {
+        width: 100%;
+    }
+    .Pool {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .PoolParagraph {
+        font-size: 20px;
+        color: #5e5e5e;
+        text-align: center;
+    }
+    .PoolHeader {
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .TryOutContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        background-color: #f5f5f5;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    .BusinessProfileContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        background-image: linear-gradient( #4d79ac, #604d8d, #604d8d);
+    }
+    .BusinessProfile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .BusinessProfileParagraphContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .BusinessProfileHeader {
+        color: #ffffff;
+        text-align: center;
+        font-size: 30px;
+    }
+    .BusinessProfileParagraph {
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .TalentPoolContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-color: #e3eaf2;
+    }
+    .TalentPool {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+    .VideoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .VideoContainer video {
+        width: 100%;
+    }
+    .Pool {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .PoolParagraph {
+        font-size: 18px;
+        color: #5e5e5e;
+        text-align: center;
+    }
+    .PoolHeader {
+        font-size: 22px;
+        color: #000000;
+        text-align: center;
+    }
+    .TryOut :first-child {
+        color: #5e5e5e;
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .TryOut :nth-child(2) {
+        color: #5e5e5e;
+        font-size: 18px;
+        line-height: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .BusinessProfileContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        background-image: linear-gradient( #4d79ac, #4d79ac, #604d8d);
+    }
+    .BusinessProfile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .BusinessProfileParagraphContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .BusinessProfileHeader {
+        color: #ffffff;
+        text-align: center;
+        font-size: 22px;
+    }
+    .BusinessProfileParagraph {
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+    }
+}

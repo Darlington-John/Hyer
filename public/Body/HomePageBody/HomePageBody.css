@@ -1,0 +1,890 @@
+.GoodLifeSection {
+    opacity: 0.5;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.GoodLifeSection.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.GoodLifeSection.animated {
+    animation: fadeIn 1.5s forwards;
+}
+
+.Gradient {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #0000004c;
+    padding: 200px 60px;
+    box-sizing: border-box;
+}
+
+.GradientContent {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.GradientContent :first-child {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.GradientContent :nth-child(2) {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.BecomeTaskerSectionContainer {
+    opacity: 0.5;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.BecomeTaskerSectionContainer.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.BecomeTaskerSectionContainer.animated {
+    animation: fadeIn 0.5s forwards;
+}
+
+.BecomeTaskerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 300px;
+}
+
+.BecomeTaskerSection img {
+    max-width: 100%;
+}
+
+.BecomeTaskerHeader {
+    color: #5e5e5e;
+    font-size: 36px;
+    text-align: center;
+}
+
+.BecomeTaskerParagraph {
+    color: #5e5e5e;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.SimpleUseContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.SimpleUse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.SimpleUse :first-child {
+    color: #5e5e5e;
+    font-size: 36px;
+}
+
+.SimpleUse :nth-child(2) {
+    color: #5e5e5e;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.FeaturesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.VisFeaturesText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4d79ac;
+    font-size: 24px;
+    text-align: center;
+}
+
+.InvisFeaturesText {
+    color: #4dac79;
+    font-size: 24px;
+    text-align: center;
+    display: none;
+    pointer-events: none
+}
+
+.Features:hover .InvisFeaturesText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.Features:hover .VisFeaturesText {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(-20px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes MoveIn {
+    30% {
+        opacity: 0.5;
+        transform: translateX(-150px)
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(100px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes MoveOut {
+    30% {
+        opacity: 0.5;
+        transform: translateX(100px)
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-50px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.DownloadHyerSection {
+    opacity: 0.5;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.DownloadHyerSection.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.DownloadHyerSection.animated {
+    animation: slideInRight 1s forwards;
+}
+
+.DownloadHyerSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 40px;
+}
+
+.DownloadHyerHeader {
+    color: #5e5e5e;
+    font-size: 36px;
+}
+
+.DownloadHyerBadges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.PlayStore {
+    width: 269px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AppStore {
+    width: 269px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PlayStore img,
+.AppStore img {
+    width: 90%;
+}
+
+.PlayStore img:hover {
+    width: 100%;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.AppStore img:hover {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes Bounce {
+    50% {
+        width: 10%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.flexibleWork {
+    opacity: 0.5;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.flexibleWork.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.flexibleWork.animated {
+    animation: slideInBottom 1s forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.AchievementsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px 100px;
+}
+
+.DownloadHyerSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 40px;
+}
+
+.DownloadHyerHeader {
+    color: #5e5e5e;
+    font-size: 36px;
+}
+
+.DownloadHyerBadges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.PlayStore {
+    width: 269px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AppStore {
+    width: 269px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PlayStore img,
+.AppStore img {
+    width: 90%;
+}
+
+.PlayStore img:hover {
+    width: 100%;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.AppStore img:hover {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.AmazingPartnersContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #4d79ac;
+    padding: 50px 100px;
+}
+
+.PartnersSwiperContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.PartnersHeader {
+    color: #ffffff;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.PartnersHeader img {
+    max-width: 100%;
+}
+
+.HelpLocationContainer {
+    opacity: 0.5;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.HelpLocationContainer.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.HelpLocationContainer.animated {
+    animation: slideInBottom 1s forwards;
+}
+
+.HelpLocationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.HelpContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.LocationContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Divider {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #5e5e5e;
+    height: 245px;
+    padding: 2px;
+}
+
+@media screen and (max-width: 1220px) {
+    .Gradient {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: #0000004c;
+        padding: 200px 60px;
+        box-sizing: border-box;
+    }
+    .BecomeTaskerSection {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+    }
+    .BecomeTaskerSection img {
+        max-width: 100%;
+    }
+    .BecomeTaskerHeader {
+        color: #5e5e5e;
+        font-size: 30px;
+        text-align: center;
+    }
+    .BecomeTaskerParagraph {
+        color: #5e5e5e;
+        font-size: 20px;
+        text-align: center;
+        line-height: 36px;
+    }
+    .FeaturesContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding-top: 70px;
+    }
+    .SimpleUseContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px;
+        background-color: #f5f5f5;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    .SimpleUse :first-child {
+        color: #5e5e5e;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .SimpleUse :nth-child(2) {
+        color: #5e5e5e;
+        font-size: 22px;
+        line-height: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    /* .TalkingTaskers {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px;
+    }
+    .TalkingTaskersHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 30px;
+        gap: 10px;
+        color: black;
+    }
+    .TalkingTaskersHeader img {
+        max-width: 100%;
+    }
+    .TaskersPOV {
+        font-size: 20px;
+    } */
+    .DownloadHyerHeader {
+        color: #5e5e5e;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .HelpLocationContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 20px;
+    }
+    .HelpContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .LocationContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Divider {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #5e5e5e;
+        height: 245px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .FeaturesContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding-top: 70px;
+    }
+    .HelpLocationContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        gap: 30px;
+    }
+    .HelpContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .LocationContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Divider {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #5e5e5e;
+        width: 100%;
+        height: 1px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .Gradient {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: #0000004c;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+    .GradientContent {
+        color: #fff;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .GradientContent :first-child {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .GradientContent :nth-child(2) {
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .Gradient {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: #0000004c;
+        padding-top: 100px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .SimpleUseContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        background-color: #f5f5f5;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    .TalkingTaskers {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    .PlayStore {
+        width: 209px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AppStore {
+        width: 209px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .Gradient {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: #0000004c;
+        padding: 10px;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+    .GradientContent {
+        color: #fff;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .GradientContent :first-child {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .GradientContent :nth-child(2) {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .BecomeTaskerSection {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .BecomeTaskerSection img {
+        max-width: 100%;
+    }
+    .BecomeTaskerHeader {
+        color: #5e5e5e;
+        font-size: 22px;
+        text-align: center;
+    }
+    .BecomeTaskerParagraph {
+        color: #5e5e5e;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .SimpleUse :first-child {
+        color: #5e5e5e;
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .SimpleUse :nth-child(2) {
+        color: #5e5e5e;
+        font-size: 18px;
+        line-height: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .FeaturesContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+    .DownloadHyerHeader {
+        color: #5e5e5e;
+        font-size: 22px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .DownloadHyerBadges {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .PlayStore {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AppStore {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .SwiperHeader {
+        color: #5e5e5e;
+        font-size: 22px;
+    }
+    /* .TalkingTaskersHeader {
+        font-size: 22px;
+    }
+    .TaskersPOV {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        gap: 10px;
+        color: black;
+    } */
+}

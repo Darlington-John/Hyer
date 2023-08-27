@@ -1,0 +1,70 @@
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.FooterContainer {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 100px;
+    background-color: #f3f3f3;
+}
+
+.FooterHeader {
+    color: #5e5e5e;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Footer a {
+    color: #5e5e5e;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.GetAppContent img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.DontMissContent,
+.GetAppContent,
+.CommunityContent,
+.GetStartedContent,
+.HyerContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #5e5e5e;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1220px) {
+    .FooterContainer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    .Footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

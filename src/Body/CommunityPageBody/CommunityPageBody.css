@@ -1,0 +1,31 @@
+.GoodWork {
+    padding: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.GoodWorkHeader {
+    font-size: 36px;
+    color: #000;
+}
+
+p {
+    font-size: 20px;
+    line-height: 63.3334px;
+    color: #333;
+}
+
+@media screen and (max-width: 800px) {
+    .GoodWork {
+        padding: 20px;
+    }
+    .GoodWorkHeader {
+        font-size: 23px;
+        color: #000;
+        line-height: 40px;
+    }
+    p {
+        font-size: 18px;
+        color: #333;
+        line-height: 30px;
+    }
+}
